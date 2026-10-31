@@ -1,0 +1,17 @@
+# Java and Ant/NetBeans build outputs
+build/
+dist/
+out/
+*.class
+*.jar
+nbproject/private/
+
+# Local IDE and OS files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local credentials
+.env
+.env.*
