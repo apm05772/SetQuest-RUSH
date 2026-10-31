@@ -1,0 +1,31 @@
+name: Import prepared project source
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import source tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -s prepared-source.tar.xz.b64 ]; then
+            echo "Source archive not uploaded yet."
+            exit 0
+          fi
+          base64 -d prepared-source.tar.xz.b64 | tar -xJf -
+          rm prepared-source.tar.xz.b64 .github/workflows/import-prepared.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Import prepared project source and documentation"
+          git push
