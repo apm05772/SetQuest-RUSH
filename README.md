@@ -49,12 +49,3 @@ Tests compile the Java sources and check bank size, non-repetition, answer keys,
 | `tests/setquest/SmokeTest.java` | Dependency-free smoke tests |
 | `scripts/test.sh` | Compile and execute checks |
 
-## Known limitations
-
-- Desktop Swing UI only; no mobile or web edition.
-- Questions are static, and progress is not persisted across sessions.
-- Keyboard/gameplay is not covered by automated UI tests.
-
-## Licensing
-
-No open-source license has been specified.
