@@ -1,6 +1,6 @@
 # SetQuest Rush
 
-A desktop **Java Swing game in Spanish** for practicing propositional logic, quantified statements and elementary set theory through timed multiple-choice questions.
+A desktop Java Swing game in Spanish for practicing propositional logic, quantified statements and elementary set theory through timed multiple-choice questions. It was originally made as a school project.
 
 ## Game overview
 
