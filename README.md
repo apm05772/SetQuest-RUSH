@@ -49,3 +49,6 @@ Tests compile the Java sources and check bank size, non-repetition, answer keys,
 | `tests/setquest/SmokeTest.java` | Dependency-free smoke tests |
 | `scripts/test.sh` | Compile and execute checks |
 
+## AI usage
+
+This game is **AI-ASSISTED**. I primarily used it for the visual designs and the problem bank.
